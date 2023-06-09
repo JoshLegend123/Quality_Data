@@ -568,4 +568,7 @@ input {
     #close-pop {
         right: -90px;
     }
+    #form-center {
+        width: 100%;
+    }
 }
