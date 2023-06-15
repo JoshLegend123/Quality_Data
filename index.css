@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: orange;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
     transition: 0.3s ease-in;
@@ -19,15 +19,16 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     outline: none;
-    border: none;
+    border: 1px solid white;
     font-size: 14px;
     font-weight: 600;
     transition: 0.2s;
-    color: teal;
-    background-color: orange;
+    color: white;
+    background-color: transparent;
 }
 button:hover {
     background-color: white;
+    color: teal;
 }
 .section-p1 {
     padding: 20px 50px;
@@ -46,7 +47,7 @@ header {
     border-bottom-right-radius: 0px;
 }
 header h2 {
-    color: orange;
+    color: aliceblue;
 }
 #navbar {
     display: flex;
@@ -59,7 +60,8 @@ header h2 {
 }
 #navbar li a:hover,
 #navbar li a.active {
-    color: #fff;
+    color: aliceblue;
+    text-decoration: underline;
 }
 #hero {
     background-image: url('images/white-bg.jpg');
@@ -384,25 +386,36 @@ input {
 }
 /*About Stylesheet*/
 #about-txt {
-    background-color: aliceblue;
-    color: orange;
+    background-color: teal;
+    border: 2px solid teal;
+    border-radius: 10px;
     padding: 20px;
 }
 #about-txt h2 {
     text-align: center;
     font-size: 32px;
-    color: orange;
+    color: white;
+    text-decoration: underline;
 }
 #about-txt h3 {
-    font-size: 23px;
+    font-size: 22px;
+    display: inline;
+    color: white;
     text-decoration: underline;
-    text-align: center;
 }
-#about-txt p {
-    font-size: 18px;
-    font-style: italic;
-    text-align: center;
-    color: teal;
+.about-container p {
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+    display: inline;
+    margin-left: 5px;
+}
+.about-container {
+    margin: 30px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
 }
 /*Media Queries*/
 @media (max-width:1024px) {
@@ -461,6 +474,9 @@ input {
         margin-top: 10px;
         margin-bottom: 20px;
         height: 500px;
+    }
+    .services:hover {
+        scale: 0.8;
     }
     .services img {
         width: 100%;
