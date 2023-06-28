@@ -33,3 +33,25 @@ function priceInput() {
         event.preventDefault()
     }
 }
+var script = document.createElement('script')
+script.src = 'jquery-3.6.4.js'
+document.getElementsByTagName('head')[0].appendChild(script)
+
+$(function () {
+    $("#passwordForm").on('click', function () {
+        $("#format").text("Must be at least 8 characters")
+        $("#format").css('color', 'teal')
+    })
+    $("#passwordForm").mouseleave(function () {
+        $("#format").text("")
+    })
+    $("#acct-btn-agent").on('click', function () {
+        $("#acct-btn-agent").toggleClass("acct-btn-select")
+        event.preventDefault()
+    })
+    $("#acct-btn-personal").on('click', function () {
+        $("#acct-btn-personal").toggleClass("acct-btn-select")
+        event.preventDefault()
+    })
+    $('#acct-btn-agent').css('margin-right', '15px')
+})

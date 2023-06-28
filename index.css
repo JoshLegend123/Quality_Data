@@ -226,7 +226,7 @@ footer {
     justify-content: center;
     padding-top: 20px;
 }
-form {
+#purchase-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,6 +417,53 @@ input {
     padding: 10px;
     background-color: transparent;
 }
+/*Register Stylesheet*/ 
+#register-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#atom {
+    width: 50px;
+    height: 50px;
+}
+#register-page {
+    text-align: center;
+}
+#register-page #lorem {
+    color: rgb(163, 154, 154);
+    font-size: 16px;
+}
+#register-form {
+    text-align: left;
+}
+#register-form label {
+    font-weight: bold;
+}
+#register-form input {
+    background-color: rgb(202, 198, 198);
+    border: none;
+    width: 400px;
+}
+.acct-btn,
+.acct-btn:hover {
+    color: teal;
+    border: 2px solid teal;
+
+} 
+.acct-btn-select,
+.acct-btn-select:hover {
+    color: white;
+    background-color: teal;
+    border: 2px solid aliceblue;
+    border-radius: 19px;
+}
+#register-btn {
+    padding: 10px 100px;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
 /*Media Queries*/
 @media (max-width:1024px) {
     #menu-img,
