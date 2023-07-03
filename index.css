@@ -148,69 +148,43 @@ header h2 {
     color: teal;
 }
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aliceblue;
-    padding: 10px 40px;
-    color: teal;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-#footer-div {
-    display: flex;
-    align-items: center;
     width: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-#footer-navbar li {
-    list-style-type: none;
-    margin-bottom: 40px;
-}
-#footer-navbar a {
-    color: teal;
-    text-decoration: underline;
-}
-#footer-logo {
+    background-color: black;
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-}
-#footer-logo h2 {
-    color: teal;
-}
-#footer-logo img {
-    width: 200px;
-}
-#follow h4 {
-    font-size: 24px;
-    color: teal;
-    text-align: center;
-}
-#follow #social {
-    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
 }
-#social img {
-    width: 50px;
-    height: 50px;
-    margin-left: 40px;
-}
-.contact {
+#main-footer {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+footer img {
+    background-color: #fff;
+    border-radius: 20px;
+}
+.main-footer-class {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+}
+footer hr {
+    border: 1px solid white;
+    width: 70%;
     margin-top: 20px;
 }
-.contact img {
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
+.social-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    padding: 3px;
+    margin-top: 50px;
 }
 /*Services Stylesheet*/
-
 #services-hero {
     width: 100%;
     margin: 10px 0;
@@ -429,27 +403,31 @@ input {
 }
 #register-page {
     text-align: center;
+    flex: 2;
 }
 #register-page #lorem {
     color: rgb(163, 154, 154);
     font-size: 16px;
+    padding-left: 20px;
 }
 #register-form {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 80px;
 }
 #register-form label {
     font-weight: bold;
 }
 #register-form input {
-    background-color: rgb(202, 198, 198);
-    border: none;
-    width: 400px;
+    border: 1px solid teal;
+    width: 300px;
 }
 .acct-btn,
 .acct-btn:hover {
     color: teal;
     border: 2px solid teal;
-
 } 
 .acct-btn-select,
 .acct-btn-select:hover {
@@ -459,11 +437,50 @@ input {
     border-radius: 19px;
 }
 #register-btn {
-    padding: 10px 100px;
+    padding: 10px;
     margin-top: 10px;
-    margin-left: 12px;
+    width: 320px;
 }
-
+#password-eye {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    top: -35px;
+    left: 53%;
+}
+#register-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+hr {
+    border: 0.1px solid #2c2b2b;
+    width: 150px;
+    opacity: 0.2;
+}
+#lorem span {
+    font-weight: bold;
+    color: #2c2b2b;
+}
+.acct-btn-two {
+    color: teal;
+    border: 2px solid teal;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 10px 20px 12px;
+}
+#google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    position: relative;
+    top: 4px;
+}
+#register-phone {
+    height: 100vh;
+    width: 50vw;
+}
 /*Media Queries*/
 @media (max-width:1024px) {
     #menu-img,
@@ -537,28 +554,32 @@ input {
     .services a {
         font-size: 22px;
     }
-    #follow {
-        width: 40%;
+    /*Register*/
+    #register-body {
+        flex-direction: column-reverse;
     }
-    #footer-logo {
-        margin: auto 0;
+    #register-phone {
+        height: 50vh;
+        width: 150%;
     }
-    #footer-logo img {
-        width: 100px;
+    #logo-welcome {
+        display: flex;
+        align-items: center;
+        margin: 0 30%;
+        width: 400px;
     }
-    #social img {
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
+    #register-form {
+        align-items: center;
     }
-    .contact {
-        margin-top: 10px;
+    #register-page #lorem {
+        font-size: 22px;
     }
-    #footer-div {
-        align-items: flex-end;
+    #password-eye {
+        left: 20%;
     }
-    /*Services*/
-
+    .acct-btn-two {
+    width: 150px;
+    }
 }
 @media (max-width:599px) {
     header {
@@ -604,21 +625,6 @@ input {
     .services a {
         font-size: 18px;
     }
-    #footer-div {
-        flex-direction: column;
-        align-items: center;
-    }
-    #footer-navbar {
-        display: flex;
-        margin-right: 8px;
-    }
-    #footer-navbar li {
-        margin-bottom: 0px;
-        margin-right: 10px;
-    }
-    #footer-navbar a {
-        font-size: 12px;
-    }
     #follow {
         width: 100%;
         display: flex;
@@ -633,5 +639,22 @@ input {
     }
     #form-center {
         width: 100%;
+    }
+    #logo-welcome {
+    margin: 0 18%;
+    width: 350px;
+    }
+    #register-page #lorem {
+    font-size: 16px;
+    width: 90%;
+    margin-left: 50px;
+    width: 70%;
+    overflow-x: hidden;
+    }
+    #password-eye {
+    left: 30%;
+    }
+    hr {
+    width: 100px;
     }
 }

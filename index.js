@@ -38,12 +38,15 @@ script.src = 'jquery-3.6.4.js'
 document.getElementsByTagName('head')[0].appendChild(script)
 
 $(function () {
+    $("#format").hide()
     $("#passwordForm").on('click', function () {
-        $("#format").text("Must be at least 8 characters")
-        $("#format").css('color', 'teal')
+        $("#format").show()
+        $("#format").css({'color':'teal'})
+        $("#password-eye").css({"top": "-83px"})
     })
     $("#passwordForm").mouseleave(function () {
-        $("#format").text("")
+        $("#format").hide()
+        $("#password-eye").css({"top": "-35px", "left": "53%"})
     })
     $("#acct-btn-agent").on('click', function () {
         $("#acct-btn-agent").toggleClass("acct-btn-select")
@@ -54,4 +57,10 @@ $(function () {
         event.preventDefault()
     })
     $('#acct-btn-agent').css('margin-right', '15px')
+    $("#password-eye").click(function () {
+        const type = $("#passwordForm").attr('type') === 'password' ? 'text' : 'password';
+        $("#passwordForm").attr('type', type)
+        const src = $(this).attr('src') === 'images/eye-hide.png' ? 'images/eye-show.png' : 'images/eye-hide.png';
+        $(this).attr('src', src)
+    })
 })

@@ -26,25 +26,36 @@
     </header>
     <section id="register-body">
         <div id="register-page">
-            <img src="images/atom.png" alt="" id="atom">
-            <h2>Welcome to Quality Data!</h2>
-            <p id="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi vel dolorum </p>
+            <div id="logo-welcome">
+                <img src="images/atom.png" alt="" id="atom">
+                <h2>Welcome to Quality Data!</h2>
+            </div>
+            <p id="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi vel dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.     </p>
             <form action="" method="get" id="register-form">
                 <label for="email">Email</label>
                 <input type="email" id="email">
                 <label for="password">Password</label>
                 <input type="password" id="passwordForm">
-                <p id="format"></p>
+                
+                <p id="format">Must be at least 8 characters</p>
+                <img id="password-eye" src="images/eye-hide.png" alt="">
                 <label for="">Select your type of account</label>
                 <div id="acct-type">
                     <button class="acct-btn" id="acct-btn-agent">Agent Account</button>
                     <button class="acct-btn" id="acct-btn-personal">Personal Account</button>
                 </div>
                 <button class="acct-btn-select" id="register-btn">Register</button>
-                <p>Or register with</p>
+                <div id="register-with">
+                    <hr>
+                    <p>Or Register with</p>
+                    <hr>
+                </div>
+                <button class="acct-btn-two"><img id="google-logo" src="images/google-edit.png" alt="">Google</button>
+                <button class="acct-btn-two"><img id="google-logo" src="images/brand-apple.png" alt="">Apple ID</button>
+                <p id="lorem">Already have an account? <span>Log In</span></p>
             </form>
         </div>
-        <img src="images/airtime.png" alt="">
+        <img src="images/airtime.png" alt="" id="register-phone">
     </section>
 
 
